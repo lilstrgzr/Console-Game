@@ -129,12 +129,16 @@
   <ItemGroup>
     <ClCompile Include="Creature.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Field.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Toolbox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Creature.hpp" />
     <ClInclude Include="Enemy.hpp" />
+    <ClInclude Include="Field.hpp" />
+    <ClInclude Include="Player.hpp" />
     <ClInclude Include="Toolbox.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

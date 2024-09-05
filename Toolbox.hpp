@@ -11,6 +11,6 @@ namespace tb {
 
 	void place_text(unsigned x, unsigned y, const char* text);
 
-	void place_timer(unsigned x, unsigned y, unsigned delay);
+	void place_timer(unsigned x, unsigned y, unsigned delay, const char* text = "0");
 }
 

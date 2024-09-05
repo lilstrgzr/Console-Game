@@ -24,6 +24,7 @@ char Enemy::getIcon() const{
 
 const std::string& Enemy::getName() const{
 	// TODO: вставьте здесь оператор return
+	return 0;
 }
 
 char Enemy::setIcon(){
