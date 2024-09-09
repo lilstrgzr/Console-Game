@@ -15,7 +15,7 @@ Enemy::Enemy(unsigned health_points, unsigned damage_min, unsigned damage_max, u
 }
 
 void Enemy::print_stats() const{
-	//TODO: осуцществить вывод характеристик
+	//TODO: осуществить вывод характеристик
 }
 
 char Enemy::getIcon() const{

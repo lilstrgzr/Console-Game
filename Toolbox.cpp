@@ -1,6 +1,5 @@
 ﻿#include "Toolbox.hpp"
 #include <Windows.h>
-#include <iostream>
 #include <string>
 #include<random>
 
@@ -27,10 +26,7 @@ void tb::place_cursor(unsigned x, unsigned y){
     SetConsoleCursorPosition(handler, coord);
 }
 
-void tb::place_text(unsigned x, unsigned y, const char* text){
-    tb::place_cursor(x, y);
-    std::cout << text;
-}
+
 
 void tb::place_timer(unsigned x, unsigned y, unsigned delay, const char* text){
     for (unsigned s = delay; s > 0; --s) {

@@ -8,6 +8,7 @@ protected:
 	unsigned damage_max;
 	unsigned dodge_chance;
 	unsigned crit_chance;
+	char icon;
 public:
 	Creature();
 

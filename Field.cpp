@@ -39,10 +39,16 @@ void Field::print_field() const{
 	tb::place_text(start_x, start_y + 2, "^");
 }
 
-size_t Field::getWidth() const{
-	return data[0].size();
+char Field::getCell(unsigned x, unsigned y) const { return data[y][x]; }
+
+void Field::setCell(unsigned x, unsigned y, char icon){
+	data[y][x] = icon;
 }
 
-size_t Field::getHeight() const{
-	return data.size();
-}
+size_t Field::getWidth() const{ return data[0].size(); }
+
+size_t Field::getHeight() const{ return data.size();   }
+
+unsigned Field::getStartX() const{ return start_x;     }
+
+unsigned Field::getStartY() const { return start_y;    }

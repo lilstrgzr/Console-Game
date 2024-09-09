@@ -12,8 +12,13 @@ public:
 	
 	void print_field() const;
 
+	char getCell(unsigned x, unsigned y) const;
+
+	void setCell(unsigned x, unsigned y, char icon);
 
 	size_t getWidth() const;
 	size_t getHeight() const;
+	unsigned getStartX() const;
+	unsigned getStartY() const;
 };
 

@@ -1,5 +1,5 @@
 ﻿#pragma once
-
+#include <iostream>
 
 
 namespace tb {
@@ -9,7 +9,11 @@ namespace tb {
 
 	void place_cursor(unsigned x, unsigned y);
 
-	void place_text(unsigned x, unsigned y, const char* text);
+	template <typename ANY>
+	void place_text(unsigned x, unsigned y, ANY text) {
+		tb::place_cursor(x, y);
+		std::cout << text;
+	}
 
 	void place_timer(unsigned x, unsigned y, unsigned delay, const char* text = "0");
 }
