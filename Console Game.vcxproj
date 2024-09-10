@@ -141,6 +141,7 @@
     <ClInclude Include="Field.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Toolbox.hpp" />
+    <ClInclude Include="Upgrades.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

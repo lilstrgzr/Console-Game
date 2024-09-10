@@ -10,9 +10,11 @@ Field field(6, 5, 3, 3);
 Player player;
 
 int main() {
+	
 	player.startPlace(field);
 	field.print_field();
 	player.print_stats();
+
 
 	try{
 		while(true) {//TODO: Поменять условие

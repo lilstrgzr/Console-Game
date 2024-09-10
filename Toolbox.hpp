@@ -15,6 +15,9 @@ namespace tb {
 		std::cout << text;
 	}
 
+	void place_title(unsigned x, unsigned y, std::string text, unsigned widht, char space = ' ');
+
 	void place_timer(unsigned x, unsigned y, unsigned delay, const char* text = "0");
+
 }
 

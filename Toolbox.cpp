@@ -26,7 +26,15 @@ void tb::place_cursor(unsigned x, unsigned y){
     SetConsoleCursorPosition(handler, coord);
 }
 
-
+void tb::place_title(unsigned x, unsigned y, std::string text, unsigned widht, char space) {
+    unsigned textless_width = widht - text.size();
+    unsigned left_spaces = textless_width / 2;
+    unsigned right_spaces = widht - text.size() - left_spaces;
+    tb::place_cursor(x, y);
+    for (unsigned i = 0; i < left_spaces; ++i) std::cout << space;
+    std::cout << text;
+    for (unsigned i = 0; i < right_spaces; ++i) std::cout << space;
+}
 
 void tb::place_timer(unsigned x, unsigned y, unsigned delay, const char* text){
     for (unsigned s = delay; s > 0; --s) {

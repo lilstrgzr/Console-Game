@@ -30,13 +30,15 @@ Field::Field(unsigned width, unsigned height, unsigned offsetWidth, unsigned off
 }
 
 void Field::print_field() const{
+	tb::place_title(0, 0, "Console game", getWidth(), '-');
+	tb::place_cursor(0, 1);
 	for (unsigned i = 0; i < getHeight(); ++i) {
 		for (unsigned j = 0; j < getWidth(); ++j) {
 			std::cout << data[i][j];
 		}
 		std::cout << std::endl;
 	}
-	tb::place_text(start_x, start_y + 2, "^");
+	tb::place_text(start_x, start_y + 3, "^");
 }
 
 char Field::getCell(unsigned x, unsigned y) const { return data[y][x]; }

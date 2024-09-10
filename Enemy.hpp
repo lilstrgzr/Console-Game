@@ -6,7 +6,7 @@ class Enemy : public Creature{
 private:
 	std::string name;
 public:
-	Enemy(char icon);
+	Enemy(char icon, unsigned lvl = 1);
 
 	Enemy(unsigned health_points, unsigned damage_min, unsigned damage_max, unsigned dodge_chance, unsigned crit_chanse, char icon, std::string name);
 

@@ -30,6 +30,8 @@ public:
 
 	void move();
 
-	void battle();
+	void battle(char enemy_type);
+
+	void upgrade(unsigned y);
 };
 

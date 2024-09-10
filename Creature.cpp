@@ -24,3 +24,7 @@ unsigned Creature::hit(Creature& target) const {
 void Creature::take_damage(unsigned damage){
     health_points -= damage > health_points ? health_points : damage;
 }
+
+unsigned Creature::getHP() const{
+    return health_points;
+}

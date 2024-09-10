@@ -15,6 +15,6 @@ public:
 	virtual unsigned hit(Creature& target)const ;
 	virtual void take_damage(unsigned damage);
 	virtual void print_stats() const = 0;
-
+	unsigned getHP() const;
 };
 
